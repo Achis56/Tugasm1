@@ -1,0 +1,9 @@
+SELECT
+    pelanggan_id as a,
+    nama as b, 
+    jenis_kelamin as c,
+    alamat as d 
+FROM 
+    tb_pelanggan
+WHERE
+    jenis_kelamin = 'Perempuan';

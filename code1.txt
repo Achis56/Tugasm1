@@ -1,1 +1,14 @@
-aadad
+SELECT 
+    p.pelanggan_id as a,
+    p.nama as b,
+    r.tanggal_check_in as c,
+    r.tanggal_check_out as d,
+    r.jumlah_kamar as e,
+    r.total_biaya as f
+FROM
+    tb_pelanggan p
+INNER JOIN 
+    tb_reservasi_hotel r ON p.pelanggan_id = r.pelanggan_id
+WHERE 
+    r.jumlah_kamar = 2 ;
+    

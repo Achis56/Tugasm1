@@ -1,0 +1,16 @@
+SELECT
+    p.pelanggan_id as a,
+    p.nama as b, 
+    p.jenis_kelamin as c,
+    p.alamat as d,
+    p.tanggal_lahir as e,
+    r.tanggal_check_in as f,
+    r.tanggal_check_out as g,
+    r.total_biaya as h
+FROM 
+    tb_pelanggan p
+INNER JOIN 
+    tb_reservasi_hotel r ON p.pelanggan_id = r.pelanggan_id
+WHERE
+    r.jumlah_kamar = 2
+    AND p.tanggal_lahir >= '1990-01-01';

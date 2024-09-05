@@ -1,0 +1,10 @@
+SELECT
+    pelanggan_id as a,
+    nama as b, 
+    jenis_kelamin as c,
+    alamat as d,
+    tanggal_lahir as e
+FROM 
+    tb_pelanggan
+WHERE
+    tanggal_lahir >= '1990-01-01';
